@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    box-sizing: border-box;
+    color: white;
+}
+/* section ====== header */
+.header{
+    height: 100vh;
+    background-image: url(./images/coffee_image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;4
+    position: relative;
+}
+.logo{
+
+}
+.logo a{
+    font-family: "Clicker Script", cursive;
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+
+}
+.logo a:hover{
+    color: #F9C06A;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-list li {
+    padding-left: 2rem;
+
+}
+.nav-list li:hover{
+    color: #F9C06A;
+}
+
+.signin{
+    background: none;
+    border: none;
+
+    
+}
+.signin:hover{
+    color: #F9C06A;
+}
+.signup{
+    background-color: #F9C06A;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin-left: 1rem;
+    border: none;
+}
+.signup:hover{
+    color: black;
+    background: white;
+}
+
+.checkbox{
+    display: none;
+}
+.label-nav{
+    font-size: 1.5rem;
+    display: none;
+}
+
+/* media quoerie for navbar */
+@media (max-width:900px){
+    .nav-list{
+        flex-direction: column;
+        position: absolute;
+        top: -10px;
+        right: 0;
+        background: #F9C06A;
+        margin-right: 0.5rem;
+        padding: 5rem 1rem;
+        border-radius: 5px;
+        display: none;
+    }
+    .nav-list li{
+        padding-bottom: 1rem;
+        color: black;
+    }
+    .nav-list li:hover{
+        color: white;
+    }
+
+    .nav-btn{
+        position: absolute;
+        top: 17rem;
+        right: 30px;
+        display: none;
+    }
+    .signin{
+        font-size: 1rem;
+        color: black;
+    }
+    .signin:hover{
+        color: white;
+    }
+    .signup{
+        font-size: 0.7rem;
+        padding: 7px 10px;
+        margin: 0;
+        background-color: black;
+    }
+    .label-nav{
+        display: block;
+        z-index: 1;
+    }
+    .checkbox:checked+ .label-nav +.nav-list{
+        display: block;
+
+    }
+    .checkbox:checked +.label-nav+.nav-list+.nav-btn{
+        display: block;
+    }
+        
+}
