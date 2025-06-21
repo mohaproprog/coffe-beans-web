@@ -16,18 +16,14 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 1rem;4
+    padding: 1rem;
     position: relative;
-}
-.logo{
-
 }
 .logo a{
     font-family: "Clicker Script", cursive;
     text-decoration: none;
     font-size: 2em;
     color: white;
-
 }
 .logo a:hover{
     color: #F9C06A;
@@ -127,3 +123,38 @@
     }
         
 }
+/* navbar ended  */
+
+/* hero styling */
+.hero{
+    padding: 50px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.hero h1{
+    font-size: 18rem;
+    font-family: "Clicker Script", cursive;
+    font-weight: 200;
+}
+.hero button{
+    font-weight: 1rem;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: none;
+    background: #F9C06A;
+    color:black;
+    margin-top: 20px;
+}
+
+@media (max-width:900px){
+    .hero{
+        font-size: 1rem;
+        margin-top:100px;
+    }
+    .hero h1{
+        font-size: 12rem;
+        color: #F9C06A;
+    }
+}
+
