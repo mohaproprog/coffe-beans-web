@@ -158,3 +158,146 @@
     }
 }
 
+/* hero done */
+
+/* about us */
+.about{
+    height: 200vh;
+}
+
+/* discover */
+.descover{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.the-best p{
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin: 30px 0;
+}
+.the-best h1{
+    color: #6F4E37;
+    font-size: 3rem;
+}
+.the-best button{
+    background-color: #F9C06A;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 15px;
+}
+
+.the-best-img img{
+    width: 600px;
+
+}
+
+.coffe-blast{
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+}
+
+@media (max-width:1100px){
+    .descover{
+        flex-direction: column;
+        
+    }
+    .the-best h1{
+        font-size: 2rem;
+    }
+    .the-best p{
+        font-size: 0.8rem;
+    }
+    .the-best-img img{
+        width: 400px;
+        margin-top: 20px;
+    
+    }
+
+}
+@media (max-width:900px){
+    .coffe-blast{
+        display: none;
+    }
+}
+@media (max-width:899px){
+    .coffe-blast{
+        display: block;
+
+    }
+}
+
+/* discover done */
+
+/* coffe style */
+.coffe-style h1{
+    color: #6F4E37;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 3rem;
+
+}
+.coffe-style p{
+    color: black;
+    text-align: center;
+}
+
+.our-special{
+    display: flex;
+    justify-content:center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.order-now{
+    border: 0.5px solid #d7b298;
+    padding-bottom: 50px;
+    background-color: #f0d4bf;
+    position: relative;
+}
+.order-now h3{
+    color:#6F4E37;
+    text-align: center;
+
+}
+.order-now p{
+    text-align: center;
+}
+
+.order-btn button{
+    position: absolute;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: black;
+    background-color: #F9C06A;
+    font-weight: 600;
+    bottom: -20px;
+    left: 30%;
+}
+
+@media (max-width:1000px){
+    .coffe-style h1{
+        font-size: 1.5rem;
+        margin-top: 120px;
+    }
+    .coffe-style p{
+        font-size: 0.7rem;
+        margin-top: 10px;
+    }
+   
+}
+@media (max-width:1500px){
+     .order-now{
+        width: 200px;
+        margin-bottom: 15px;
+    }
+    .order-now img{
+        width: 199px;
+    }
+}
