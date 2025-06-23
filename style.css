@@ -416,7 +416,6 @@ join us */
     background-position: center;
     position: relative;
     z-index: -2;
-    margin-top: -100px;
 
 }
 .action::after{
@@ -462,7 +461,7 @@ join us */
 
 @media(max-width:1200px){
     .action{
-        margin-top: 100px;
+        bottom: -260px;
         flex-direction: column;
     }
     .action-text{
@@ -496,4 +495,68 @@ join us */
     .action-text h1{
         font-size: 1.7rem;
     }
+}
+
+
+/* testimonial */
+
+.testimonial{
+    height: 100vh;
+    margin-top: 100px;
+}
+.testimonial h1{
+    color: #6F4E37;
+    text-align: center;
+    font-size: 3rem;
+
+}
+.testimonial p{
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.review{
+    border: 1px solid #F9C06A;
+    padding: 150px;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #f0d4bf;
+    margin-top: -100px;
+
+}
+.review h3{
+    color: #6F4E37;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.arrow1{
+    background-color: #F9C06A;
+    padding: 25px 30px;
+    border-radius: 10px;
+    position: absolute;
+    right: -20px;
+    top: 40%;
+}
+.arrow2{
+    background-color: #F9C06A;
+    padding: 25px 30px;
+    border-radius: 10px;
+    position: absolute;
+    left: -20px;
+    top: 40%;
+}
+
+.photo-review{
+    position: absolute;
+    bottom: -50px;
+    right: 45%;
 }
