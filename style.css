@@ -403,6 +403,11 @@ join us */
         font-size: 0.8rem;
         margin-top: -20px;
     }
+    .join button{
+        padding: 5px 9px;
+        font-size: 12px;
+        font-weight: 600;
+    }
 }
 
 /* call to action */
@@ -463,6 +468,7 @@ join us */
     .action{
         bottom: -260px;
         flex-direction: column;
+        margin-bottom: 350px;
     }
     .action-text{
         margin: 100px;
@@ -559,4 +565,64 @@ join us */
     position: absolute;
     bottom: -50px;
     right: 45%;
+}
+.p-review{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: xx-large;
+}
+
+@media (max-width:1200px){
+    .testimonial{
+        margin-right: 20px;
+    }
+    .testimonial .test-h{
+        
+    
+    }
+    .test-h h1{
+        font-size: 1.5rem;
+    }
+    .test-h p{
+        font-size: 0.9rem;
+    }
+    .review{
+        padding: 30px 10px;
+        margin: 20px;
+        margin-top: -200px;
+    }
+    .review p{
+        font-size: 0.9rem;
+    }
+    .review h3{
+        font-size: 1rem;
+    }
+    .p-review{
+        top: 0;
+    }
+    .photo-review{
+        bottom: -80px;
+        right: 170px;
+    }
+    .photo-review img{
+        width: 100px;
+    }
+    .arrow1 img, .arrow2 img{
+        width: 10px;
+        
+
+    }
+    .arrow1, .arrow2{
+        padding: 10px 15px;
+    }
+    .arrow1{
+        top:80%;
+        right: -20px;
+    }
+       .arrow2{
+        top:80%;
+        left: -20px;
+    }
+
 }
