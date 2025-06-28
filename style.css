@@ -2,8 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: poppins;
-    box-sizing: border-box;
     color: white;
+}
+html,body{
+
+    height: 100%;
+}
+body{
+    min-height: 100vh;
 }
 /* section ====== header */
 .header{
@@ -153,7 +159,7 @@
         margin-top:100px;
     }
     .hero h1{
-        font-size: 12rem;
+        font-size: 9rem;
         color: #F9C06A;
     }
 }
@@ -399,6 +405,9 @@ join us */
     margin-top: 20px;
 }
 @media (max-width:900px){
+    .join{
+        margin-bottom: 1000px;
+    }
     .join p{
         font-size: 0.8rem;
         margin-top: -20px;
@@ -625,4 +634,121 @@ join us */
         left: -20px;
     }
 
+}
+
+/* footer */
+.footer{
+    height: 100vh;
+}
+
+.subscribe{
+    height: 40vh;
+    background-image: url(./images/Rectangle\ 14.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe::after{
+    content: '';
+    position: absolute;
+    background: rgba(26, 15, 15, 0.5);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.subscribe-btn h1{
+    color: white;
+    font-size: 2.5rem;
+
+}
+.subscribe-btn p{
+    color:white;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 200;
+
+
+
+}
+.email-btn{
+    margin: 20px;
+    margin-left: 100px;
+
+}
+.email-btn input{
+    padding: 5px 0;
+    padding-right: 150px;
+
+}
+.email-btn input::placeholder{
+    font-size: 0.7rem;
+    color: rgb(44, 37, 37);
+    padding: 10px 15px;
+
+}
+.email-btn button{
+    background-color: #F9C06A;
+    padding: 6px 15px;
+    border: none;
+}
+
+/* footer-list */
+
+.footer-list{
+    height: 70%;
+    background-color: #522c11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    position: relative;
+}
+.footer-list .list1 h2{
+    font-size: 2rem;
+    font-family: "Clicker Script", cursive;
+}
+.list1 p{
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 200;
+}
+.list1 .footer-sm{
+    margin-top: 20px;
+}
+.footer-sm i{
+    margin-left: 20px;
+}
+.list2 ul{
+    list-style: none;
+    margin-top: 30px;
+}
+.list2 ul li{
+    margin-top: 20px;
+    margin-bottom:10px ;
+}
+.footer-abs{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+}
+.footer-abs img{
+  width: 1520px;
+  opacity: 0.3;
+}
+
+@media (max-width:900px){
+    .footer-list{
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 2000px;
+    }
 }
